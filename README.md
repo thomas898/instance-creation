@@ -2,8 +2,11 @@
 
 tested with Terraform v0.11.13
 for installing
+
 wget https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+
 unzip terraform_0.11.13_linux_amd64.zip
+
 copy binary to /usr/local/bin
 
 <b>Step 1:Configure the IAM user in your computer using AWS-CLI command.</b>
