@@ -1,6 +1,6 @@
 <b>Readme</b> 
 
-Step 1:Configure the IAM user in your computer using AWS-CLI command.
+<b>Step 1:Configure the IAM user in your computer using AWS-CLI command.</b>
 
 aws configure
 
@@ -33,12 +33,12 @@ terraform apply
 
 Now, server is up with docker installed
 
-Step 2:Next is create a Repository in ECR
+<b>Step 2:Next is create a Repository in ECR</b>
 
 login to aws console, select ECR and click on create repository called "nginx-custom" make a note of repository URL we will use this in our jenkins pipeline
 
 
-Step 3: create a sample web project 
+<b>Step 3: create a sample web project </b>
 
 This web project will be configured as the root folder in nginx. it will have the index.html, Dockerfile and Jenkinsfile
 
@@ -53,7 +53,7 @@ in the withcredential section of jenkins file change the repository URI in both 
 
 
 
-Step 4:Configure jenkins job 
+<b>Step 4:Configure jenkins job <b>
 
 install jenkins and install ssh and sshagent plugin
 
