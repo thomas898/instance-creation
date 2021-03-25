@@ -16,8 +16,11 @@ aws configure
 this will ask you to enter the access key ,secret key and other details
 
 AWS Access Key ID : enter access key
+
 AWS Secret Access Key: secret key
+
 Default region name : ap-south-1
+
 Default output format [json]: json
 
 I have created this project in such a way that we need to change only few variables in root directory of the project and it will deploy in any AWS account
