@@ -23,7 +23,7 @@ Default region name : ap-south-1
 
 Default output format [json]: json
 
-I have created this project in such a way that we need to change only few variables in root directory of the project and it will deploy in any AWS account
+I have created this project in such a way that we need to change only few variables in root directory of the project(varaibles.tf) and it will deploy in any AWS account
 
 1.if you need any specific instance type, change nginxinstance_instance_type variable
 
@@ -39,7 +39,9 @@ Once the changes are done, execute the below commands( Please make sure your IAM
 
 
 terraform init
+
 terraform plan
+
 terraform apply
 
 
@@ -59,6 +61,7 @@ Docker file using the nginx image from docker hub and  copy the index.html to th
 Changes to be made in Jenkinsfile for the smooth running of process
 
 dev.host: give ip address of newly created instance
+
 REPOSITORY_URI: change it with the repository we created 
 
 in the withcredential section of jenkins file change the repository URI in both docker pull and docker run command
@@ -67,7 +70,7 @@ in the withcredential section of jenkins file change the repository URI in both 
 
 <b>Step 4:Configure jenkins job <b>
 
-install jenkins and install ssh and sshagent plugin
+install jenkins and install ssh and sshagent plugin also configure the ssh key in credentials page
 
 create github hook
 create pipeline
